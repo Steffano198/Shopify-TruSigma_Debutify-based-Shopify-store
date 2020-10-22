@@ -80,7 +80,7 @@
                                   {% if product.images.size > 1 %}
                                   <div class="product-single__thumbnails slick-format slick-format-sm grid grid--small {% if product.images.size < 6  %}slick-disabled{% endif %}" id="ProductThumbs">
                                     <div class="grid__item one-fifth">
-                                      <a class="product-single__thumbnail">
+                                      <a class="product-single__thumbnail">{{ featured_image.src }}
                                         <img class="product-single__thumb lazyload" data-src="{{ featured_image.src | img_url: '150x150', crop: 'center' }}" alt="{{ featured_image.alt | escape }}">
                                       </a>
                                     </div>

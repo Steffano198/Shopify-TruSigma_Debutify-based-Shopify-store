@@ -13,8 +13,8 @@
             <img class="hide image-empty-sticky_addtocart image-sticky_addtocart" src="">
             {% if product.has_only_default_variant %}
               {% assign image = featured_image %}
-              <img class="image-sticky_addtocart image-sticky_addtocart-{{ variant.id }}" src="{{ image | img_url: "65x65", crop: "center" }}"
-                   srcset="{{ image | img_url: "65x65", crop: "center" }} 1x, {{ image | img_url: "65x65", crop: "center", scale: 2 }} 2x">
+              <img class="image-sticky_addtocart image-sticky_addtocart-{{ variant.id }}" src="{{ image | img_url: "65x65"}}"
+                   srcset="{{ image | img_url: "65x65" }} 1x, {{ image | img_url: "65x65", crop: "center", scale: 2 }} 2x">
             {% else %}
               {% for variant in product.variants %}
                 {% if variant.image %}
@@ -23,7 +23,7 @@
                   {% assign image = featured_image %}
                 {% endif %}
                 <img class="image-sticky_addtocart image-sticky_addtocart-{{ variant.id }} {% unless variant == current_variant %}hide{% endunless %}" src="{{ image | img_url: "65x65", crop: "center" }}"
-                     srcset="{{ image | img_url: "65x65", crop: "center" }} 1x, {{ image | img_url: "65x65", crop: "center", scale: 2 }} 2x">
+                     srcset="{{ image | img_url: "65x65"}} 1x, {{ image | img_url: "65x65", crop: "center", scale: 2 }} 2x">
               {% endfor %}
             {% endif %}
           {% endif %}

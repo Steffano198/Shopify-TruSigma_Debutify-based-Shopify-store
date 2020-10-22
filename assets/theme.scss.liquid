@@ -2968,6 +2968,10 @@ $class-type: unquote(".");
 
 .grid-product__image-link {
   background-color: $colorProduct;
+  max-width: 130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   
   .is-sold-out & {
     opacity: $opacity-link-hover;
@@ -3818,6 +3822,8 @@ $slick-opacity-not-active: 1;
   left: 0;
   top: 0;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   &:before,
   &:after {
@@ -6602,9 +6608,22 @@ cite{
 
 .logo-bar__item {
   display: inline-block;
-  vertical-align: middle;
-  max-width: 160px;
-  margin: 0 ($gutter-sm) $gutter;
+  //vertical-align: middle;
+  //max-width: 160px;
+  //margin: 0 ($gutter-sm) $gutter;
+
+  max-width: 100%;
+  height: auto;
+  width: 120px;
+  //display: block;
+  margin: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 9px;
+  border: 3px solid #295c4b;
+
 
   @include screen($small){
     display: block;
@@ -7007,6 +7026,9 @@ cite{
   width: 100%;
   height: 100%;
   overflow: hidden;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
   @include flex(1);
   -ms-flex-item-align: center;
   -webkit-align-self: center;

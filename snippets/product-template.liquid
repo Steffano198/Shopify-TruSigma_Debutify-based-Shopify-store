@@ -163,14 +163,14 @@
               <div class="product-single__thumbnails slick-format slick-format-sm grid grid--small {% if product.images.size < 6  %}slick-disabled{% endif %}" id="ProductThumbs">
                 <div class="grid__item one-fifth">
                   <a class="product-single__thumbnail">
-                    <img class="product-single__thumb" src="{{ featured_image.src | img_url: '150x150', crop: 'center' }}" alt="{{ featured_image.alt | escape }}">
+                    <img class="product-single__thumb" src="{{ featured_image.src | img_url }}" alt="{{ featured_image.alt | escape }}">
                   </a>
                 </div>
                 {% for image in product.images %}
                   {% unless image contains featured_image %}
                     <div class="grid__item one-fifth">
                       <a class="product-single__thumbnail">
-                        <img class="product-single__thumb" src="{{ image.src | img_url: '150x150', crop: 'center' }}" alt="{{ image.alt | escape }}">
+                        <img class="product-single__thumb" src="{{ image.src | img_url }}" alt="{{ image.alt | escape }}">
                       </a>
                     </div>
                   {% endunless %}

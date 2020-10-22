@@ -42,8 +42,8 @@
                     {% if block.settings.quote_image %}
                     {% assign image_size = 'x' | append: section.settings.quote_width | prepend: section.settings.quote_width %}
                       <div class="quote-image-wrapper">
-                        <img class="quote-image" src="{{ block.settings.quote_image | img_url: image_size, crop: 'center' }}"
-                             srcset="{{ block.settings.quote_image | img_url: image_size, crop: 'center' }} 1x, {{ block.settings.quote_image | img_url: image_size, crop: 'center', scale: 2 }} 2x">
+                        <img class="quote-image" src="{{ block.settings.quote_image | img_url: image_size }}"
+                             srcset="{{ block.settings.quote_image | img_url: image_size }} 1x, {{ block.settings.quote_image | img_url: image_size, scale: 2 }} 2x">
                       </div>
                     {% else %}
                       <div class="quote-icon-wrapper">
