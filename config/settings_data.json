@@ -137,6 +137,7 @@
     "dbtfy_live_view_min": 2,
     "dbtfy_live_view_max": 14,
     "dbtfy_live_view_interval": 3,
+    "dbtfy_newsletter_popup": true,
     "dbtfy_sales_pop": false,
     "dbtfy_sales_pop_mobile": false,
     "dbtfy_sales_pop_collection": "",
@@ -207,8 +208,6 @@
       "header": {
         "type": "header",
         "settings": {
-          "default_logo": "shopify:\/\/shop_images\/logo.png",
-          "inverted_logo": "shopify:\/\/shop_images\/logo.png",
           "height_logo": 46,
           "navigation_type": "center",
           "navigation_wrapper": "fluid",
@@ -237,7 +236,8 @@
               "title": "Empty Bottle Policy",
               "text": "",
               "button_style": "btn-outline-primary",
-              "button_label": ""
+              "button_label": "",
+              "button_link": ""
             }
           },
           "1561094726190": {
@@ -247,7 +247,8 @@
               "title": "Our Guarantee",
               "text": "",
               "button_style": "btn--primary",
-              "button_label": ""
+              "button_label": "",
+              "button_link": ""
             }
           },
           "1561094728717": {
@@ -257,7 +258,8 @@
               "title": "Our Guarantee",
               "text": "",
               "button_style": "btn--primary",
-              "button_label": ""
+              "button_label": "",
+              "button_link": ""
             }
           },
           "1568138773612": {
@@ -267,7 +269,8 @@
               "title": "Our Guarantee",
               "text": "",
               "button_style": "btn--primary",
-              "button_label": ""
+              "button_label": "",
+              "button_link": ""
             }
           }
         },
@@ -479,15 +482,21 @@
         "blocks": {
           "1561093141563-0": {
             "type": "collection",
-            "settings": {}
+            "settings": {
+              "collection": ""
+            }
           },
           "1561093141563-1": {
             "type": "collection",
-            "settings": {}
+            "settings": {
+              "collection": ""
+            }
           },
           "1561093141563-2": {
             "type": "collection",
-            "settings": {}
+            "settings": {
+              "collection": ""
+            }
           }
         },
         "block_order": [
@@ -507,6 +516,7 @@
       "1561093167965": {
         "type": "featured-product",
         "settings": {
+          "featured_product": "",
           "image_layout": "thumbnail",
           "product_photo_alignement": "left",
           "enable_zoom": true,
@@ -532,7 +542,8 @@
           "text_size": "large",
           "text_alignment": "text-center",
           "button_style": "btn--primary",
-          "button_label": ""
+          "button_label": "",
+          "button_link": ""
         }
       },
       "1568145568761": {
@@ -570,6 +581,7 @@
           "title": "Featured products",
           "subtitle": "",
           "section_style": "border-section",
+          "home_featured_products": "",
           "rows": "2",
           "desktop_grid": "4",
           "mobile_grid": "2",
